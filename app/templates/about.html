@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">         
+</head>
+<body style="background-image: url('https://www.wallpapertip.com/wmimgs/3-37980_anime-minimalist-wallpaper-4k.jpg?2880x1800'); background-repeat: no-repeat; background-size: cover">
+    <div class="d-flex flex-column" style="background-color: #000000cc; height: 100vh;">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/about">About</a>
+                    <a class="nav-link" href="/docs">Docs</a>
+                </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container card bg-dark text-white p-5">
+            <blockquote class="blockquote">
+                <p>Este es un sitio que recomienda un anime de manera aleatoria, además de contar con una API que puede ser usada y es consumida por el propio sitio web en combinación con la API de Kitsu para obtener recursos externos.</p>
+                <p>Este sitio es presentado como proyecto de el area sistemas distribuidos, creado por Valeria Arias y Duvan Ibarra                </p>
+            </blockquote>
+            <div class="row d-flex justify-content-around mt-4">
+                <div class="card col-2 bg-dark shadow">
+                    <img class="card-img-top" src="{{url_for('static', filename='J2Logo.png')}}" align="middle" />
+                    <div class="card-body">
+                        <h5 class="card-title">J2Logo</h5>
+                        <p class="card-text">
+                            Sitio web en el cual encontramos la explicación y tomamos idea para nuestro proyecto.
+                        </p>
+                    </div>
+                </div>
+                <div class="card col-2 bg-dark shadow">
+                    <img class="card-img-top" src="https://avatars.githubusercontent.com/u/7648832?s=280&v=4" align="middle" />
+                    <div class="card-body">
+                        <h5 class="card-title">Kitsu</h5>
+                        <p class="card-text">
+                            Sitio web del cual obtuvimos imágenes y algunos datos extra sobre los animes.
+                        </p>
+                    </div>
+                </div>
+                <div class="card col-2 bg-dark shadow">
+                    <img class="card-img-top mt-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/400px-Bootstrap_logo.svg.png" align="middle" />
+                    <div class="card-body">
+                        <h5 class="card-title mt-4">Bootstrap</h5>
+                        <p class="card-text">
+                            Framework usado para el frontend de nuestro sitio web.
+                        </p>
+                    </div>
+                </div>
+                <div class="card col-2 bg-dark shadow">
+                    <img class="card-img-top" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1518503935975/S1_-_WePM.png" align="middle" />
+                    <div class="card-body">
+                        <h5 class="card-title">Flask</h5>
+                        <p class="card-text">
+                            Framework usado para implementar el backend de nuestro sitio, incluyendo la API.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</html>
