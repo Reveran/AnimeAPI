@@ -1,5 +1,5 @@
 from entrypoint import app
-from flask import render_template
+from flask import render_template, request
 import requests
 
 null = ''
@@ -32,3 +32,7 @@ def by_id(id):
 @app.route("/about")
 def about():
     return render_template('about.html')
+
+@app.route("/docs")
+def docs():
+    return render_template('docs.html', url = request.url_root)

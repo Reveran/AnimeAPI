@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">         
+
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" aria-current="page" href="/about">About</a>
+                    <a class="nav-link active" href="/docs">Docs</a>
+                </div>
+                </div>
+            </div>
+        </nav>
+    <div class="card container bg-secondary text-light p-4 mb-5">
+        <h2>Documentation</h2>
+        <h4>API Usage</h4>
+        <section class="col-4">
+            <h6 class="bg-dark p-1 card font-monospace">{{url}}api/</h6>
+            <p>You can make a GET request to this url to obtain a random anime every time you make it.</p>
+        </section>
+        <section class="col-4">
+            <h6 class="bg-dark p-1 d-block card font-monospace">{{url}}api/<code>id</code></h6>
+            <p>Make a Get request replacing <em class="text-decoration-underline">id</em> with the id number of a knowing anime to obtain information of an anime, for example:<br>"<span class="font-monospace">{{url}}1</span>" will return you "<em>Bleach</em>'s information"</p>
+        </section>       
+
+        <h4 class="mt-2">Website Usage</h4>
+        <section class="col-4">
+            <h6 class="bg-dark p-1 card font-monospace">{{url}}</h6>
+            <p>Go to the main page to get a random anime with some info about it, every time you arrive you get a new one, so remember to save the good ones</p>
+        </section>
+        <section class="col-4">
+            <h6 class="bg-dark p-1 d-block card font-monospace">{{url}}<code>id</code></h6>
+            <p>replace <em class="text-decoration-underline">id</em> with the id number of a knowing anime to go directly to its page, for example:<br>"<span class="font-monospace">{{url}}1</span>" will send you to "<em>Bleach</em>'s page"</p>
+        </section>
+        <section class="col-4">
+            <h6 class="bg-dark p-1 card font-monospace">{{url}}about</h6>
+            <p>This page have information of the tools used to develop this website and API, and the porpouse of this project</p>
+        </section>
+        <section class="col-4">
+            <h6 class="bg-dark p-1 d-block card font-monospace">{{url}}docs</h6>
+            <p>That page shows what you are seeing now, information about how to use the website and the API</p>
+        </section>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</html>
