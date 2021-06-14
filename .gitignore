@@ -1,4 +1,8 @@
-./app/database.db
-./dbsetter.py
-./database.db
-./database.db.bk
+/app/animes/__pycache__
+/app/__pycache__
+/app/database.db
+/database.db.bk
+/database.db
+/dbsetter.py
+/env
+/migrations
